@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather</title>
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+        <div id="content">
+            <form class="top">
+                <input
+                    id="place"
+                    type="text"
+                    required
+                    placeholder="Enter a city"
+                />
+                <button type="submit">
+                    <img id="searchBtnIcon" src="" alt="" />
+                </button>
+            </form>
+            <div class="weather">
+                <div class="lds-ripple hidden">
+                    <div></div>
+                    <div></div>
+                </div>
+                <h2 class="hidden">City Not Found</h2>
+                <img id="weatherIcon" src="" alt="" />
+                <h2 id="temperature"></h2>
+                <p id="city"></p>
+                <div class="bottom">
+                    <div class="humidity">
+                        <p id="humidityData"></p>
+                        <p id="humidityLabel">Humidity</p>
+                    </div>
+                    <div class="windSpeed">
+                        <p id="windSpeedData"></p>
+                        <p id="windSpeedLabel">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
